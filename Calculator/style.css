@@ -1,0 +1,80 @@
+body{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.main{
+    position: absolute;
+    top: 20vh;
+    width: 48vh;
+    height: 50vh;
+    border: 2px solid rgb(77, 0, 0);
+    color: white;
+    background-color: black;
+    
+}
+
+.display{
+    background-color: rgb(194, 71, 77);
+    border: 2px solid rgb(77, 73, 73);
+    height: 5rem;
+    text-align: right;
+    font-size: 1.8rem;
+}
+.display p{
+    margin-right: 20px;
+}
+
+.button-display{
+    margin-top: 10px;
+}
+.button{
+    margin-bottom: 2px;
+    display: inline-block;
+    width: 22.7%;
+    height: 3.5rem;
+    text-align: center;
+}
+.button span{
+    font-size: 1.6rem;
+    position: absolute;
+    margin: 13px 0px 0px 0px;
+}
+.button:hover{
+    border-bottom: 2px solid rgb(143, 134, 134);
+    border-radius: 50px;
+    width: 20%;
+    border-right: 2px solid rgb(182, 174, 174);
+}
+
+
+
+/* Responsiveness */
+
+@media screen and (max-width:650px) {
+    .main{
+        width: 40vh;
+        height: 43vh;
+    }
+    .button{
+        margin-bottom: 2px;
+        width: 3.89rem;
+        height: 3rem;
+        /* border: 2px solid black; */
+        text-align: center;
+    }
+}
+@media screen and (max-width:375px) {
+    .main{
+        width: 40vh;
+        height: 35vh;
+    }
+    .button{
+        margin-bottom: 2px;
+        width: 3.75rem;
+        height: 2rem;
+        /* border: 2px solid black; */
+        text-align: center;
+    }
+}
